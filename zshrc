@@ -32,3 +32,11 @@ function jdk_version() {
 }
 
 autoload -Uz jdk_version
+
+
+function mkcd() {
+  dir="$*";
+  mkdir -p "$dir" && cd "$dir";
+}
+
+autoload -Uz mkcd
