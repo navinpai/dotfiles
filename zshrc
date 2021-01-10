@@ -52,3 +52,10 @@ zstyle ':vcs_info:git:*' formats ' (%b)'
 
 setopt PROMPT_SUBST
 PROMPT='%F{blue}%n%F{white}@%F{green}%m%F{cyan}$(jdk_version)%F{red}${vcs_info_msg_0_} %F{yellow}%~%f $ '
+
+# History Options
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+setopt INC_APPEND_HISTORY
