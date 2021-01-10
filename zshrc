@@ -40,3 +40,12 @@ function mkcd() {
 }
 
 autoload -Uz mkcd
+
+# Don't need this for zsh
+# parse_git_branch() {
+#    git branch 2> /dev/null | sed -e '/^[^]/d' -e 's/ \(.*\)/ (\1):/'
+# }
+
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats ' (%b)'
