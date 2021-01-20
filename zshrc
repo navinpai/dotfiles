@@ -59,3 +59,6 @@ HISTSIZE=10000000
 SAVEHIST=10000000
 
 setopt INC_APPEND_HISTORY
+
+# Remove % symbols: https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol/167600#167600
+unsetopt prompt_cr prompt_sp
