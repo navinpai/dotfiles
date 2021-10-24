@@ -82,3 +82,6 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
+
+# Don't autoupdate every brew package
+export HOMEBREW_NO_AUTO_UPDATE=1
